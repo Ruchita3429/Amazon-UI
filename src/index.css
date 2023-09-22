@@ -137,14 +137,12 @@ body {
   cursor: pointer; 
 }
 
-.form--marketing {
+.account-form{
+  color: #000000;
   display: flex;
-  margin-bottom: 20px;
+  justify-content: center;
   align-items: center;
-}
-
-.form--marketing > input {
-  margin-right: 10px;
+  padding-top: 1.3rem;
 }
 
 .cart--text{

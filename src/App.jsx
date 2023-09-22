@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "./components/Navbar"
 import Banner from "./components/Banner"
 import Signin from "./components/Signin"
+import Login from "./components/Login"
 import Categories from "./components/Categories"
 import Footer from "./components/Footer"
 import data from "./info/data"
@@ -81,6 +82,14 @@ export default function App(){
                 <React.Fragment>       
                 <Navbar />
                 <Signin />
+                <Footer />
+                </React.Fragment>      
+              }/>
+
+            <Route exact path="/login" element={    
+                <React.Fragment>       
+                <Navbar />
+                <Login />
                 <Footer />
                 </React.Fragment>      
               }/>

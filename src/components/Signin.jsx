@@ -1,11 +1,11 @@
 import React from "react"
+import { Link } from 'react-router-dom';
 
 export default function Signin() {
     const [formData, setFormData] = React.useState({
         email: "",
         password: "",
         passwordConfirm: "",
-        joinedNewsletter: true
     })
     
     function handleChange(event) {
@@ -57,22 +57,17 @@ export default function Signin() {
                     onChange={handleChange}
                     value={formData.passwordConfirm}
                 />
-                
-                <div className="form--marketing">
-                    <input
-                        id="okayToEmail"
-                        type="checkbox"
-                        name="joinedNewsletter"
-                        onChange={handleChange}
-                        checked={formData.joinedNewsletter}
-                    />
-                    <label htmlFor="okayToEmail">I want to join the newsletter</label>
-                </div>
-                <button 
-                    className="form--submit"
-                >
+
+
+                <button className="form--submit">
                     Sign up
                 </button>
+
+                <Link to="/login">
+                  <div className="account-form">
+                  Already have an account? Login
+                  </div>
+                </Link>
             </form>
         </div>
     )
